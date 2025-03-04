@@ -224,15 +224,19 @@ body{
         font-weight: bolder;
         font-style: normal;
         color:red;
-        font-size: 3rem;
-        line-height: 4.5rem;
+        font-size: 3.5rem;
+        line-height: 5.5rem;
     
     }
     .next {
-        margin-top:0;
+        position: fixed;
+        bottom: 40px;
+        left: 0;
+        margin-left:20px;
+        width: 100%;
         display: flex;
-        align-items: flex-start; /* Ensures input and button align with the top */
-        gap: 5px; /* Adjust spacing between input and button */
+        justify-content: left;
+        gap: 5px;
     }
     
     /* STYLE FOR THE INPUT FIELD */
