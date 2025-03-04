@@ -1,0 +1,277 @@
+body{
+    background-color: rgb(250, 249, 249);
+}
+
+.text{
+    top:0;
+    margin-left:50px;
+    font-family: "zuume-edge", sans-serif;
+    font-weight: bolder;
+    font-style: normal;
+    color:red;
+    font-size: 5.5rem;
+    line-height: 8rem;
+
+}
+.top {
+    display: flex;
+    align-items: flex-start; /* Aligns the .next div with the top of .text */
+    justify-content: flex-start;
+    padding: 50px;
+    gap: 50px; /* Adjust spacing between text and input/button */
+}
+
+.next {
+    margin-top:120px;
+    display: flex;
+    align-items: flex-start; /* Ensures input and button align with the top */
+    gap: 20px; /* Adjust spacing between input and button */
+}
+
+/* STYLE FOR THE INPUT FIELD */
+#charInput {
+    height: 120px; /* Matches the button height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "zuume-edge", sans-serif;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 6rem;
+    color:red;
+    width: 8vw; /* Set a smaller width */
+}
+
+
+/* STYLE FOR THE SUBMIT BUTTON */
+#submitButton {
+    height:120px;
+    font-family: "zuume-edge", sans-serif;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 6rem;
+    line-height: 1rem;
+    color:rgb(250, 249, 249);
+    background-color: red;
+  border: none;
+  
+
+}
+
+/* STYLE FOR THE IMAGE */
+#displayedImage {
+    display: none; /* This line is mandatory */
+    position: absolute;
+    top:0;
+    width:100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 1024px) {
+    .text{
+        top:0;
+        margin-left:30px;
+        font-family: "zuume-edge", sans-serif;
+        font-weight: bolder;
+        font-style: normal;
+        color:red;
+        font-size: 4.5rem;
+        line-height: 7rem;
+    
+    }
+    .next {
+        margin-top:100px;
+        display: flex;
+        align-items: flex-start; /* Ensures input and button align with the top */
+        gap: 20px; /* Adjust spacing between input and button */
+    }
+    
+    /* STYLE FOR THE INPUT FIELD */
+    #charInput {
+        height: 100px; /* Matches the button height */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-family: "zuume-edge", sans-serif;
+        font-weight: bolder;
+        font-style: normal;
+        font-size: 5rem;
+        color:red;
+        width: 8vw; /* Set a smaller width */
+    }
+    
+    
+    /* STYLE FOR THE SUBMIT BUTTON */
+    #submitButton {
+        height:100px;
+        font-family: "zuume-edge", sans-serif;
+        font-weight: bolder;
+        font-style: normal;
+        font-size: 5rem;
+        line-height: 1rem;
+        color:rgb(250, 249, 249);
+        background-color: red;
+      border: none;
+      
+    
+    }
+    /* STYLE FOR THE IMAGE */
+#displayedImage {
+    display: none; /* This line is mandatory */
+    position: absolute;
+    top:0;
+    width:90vw;
+    height: 100vh;
+    margin: auto;
+    object-fit: cover;
+}
+  
+}
+
+@media screen and (max-width: 768px) {
+    .top {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Aligns the .next div with the top of .text */
+        justify-content: flex-start;
+        padding: 10px;
+        gap: 0px; /* Adjust spacing between text and input/button */
+    }
+    
+
+    .text{
+        top:0;
+        margin-left:20px;
+        font-family: "zuume-edge", sans-serif;
+        font-weight: bolder;
+        font-style: normal;
+        color:red;
+        font-size: 4rem;
+        line-height: 6rem;
+    
+    }
+    .next {
+        margin-top:0;
+        display: flex;
+        align-items: flex-start; /* Ensures input and button align with the top */
+        gap: 20px; /* Adjust spacing between input and button */
+    }
+    
+    /* STYLE FOR THE INPUT FIELD */
+    #charInput {
+        height: 100px; /* Matches the button height */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-family: "zuume-edge", sans-serif;
+        font-weight: bolder;
+        font-style: normal;
+        font-size: 5rem;
+        color:red;
+        width: 8vw; /* Set a smaller width */
+    }
+    
+    
+    /* STYLE FOR THE SUBMIT BUTTON */
+    #submitButton {
+        height:100px;
+        font-family: "zuume-edge", sans-serif;
+        font-weight: bolder;
+        font-style: normal;
+        font-size: 5rem;
+        line-height: 1rem;
+        color:rgb(250, 249, 249);
+        background-color: red;
+      border: none;
+      
+    
+    }
+    /* STYLE FOR THE IMAGE */
+#displayedImage {
+    display: none; /* This line is mandatory */
+    position: absolute;
+    top:0;
+    width:90vw;
+    height: 100vh;
+    margin: auto;
+    object-fit: contain;
+}
+ 
+}
+
+@media screen and (max-width: 480px) {
+
+    .top {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Aligns the .next div with the top of .text */
+        justify-content: flex-start;
+        padding: 10px;
+        gap: 0px; /* Adjust spacing between text and input/button */
+    }
+    
+
+    .text{
+        top:0;
+        margin-left:3px;
+        font-family: "zuume-edge", sans-serif;
+        font-weight: bolder;
+        font-style: normal;
+        color:red;
+        font-size: 3rem;
+        line-height: 4.5rem;
+    
+    }
+    .next {
+        margin-top:0;
+        display: flex;
+        align-items: flex-start; /* Ensures input and button align with the top */
+        gap: 5px; /* Adjust spacing between input and button */
+    }
+    
+    /* STYLE FOR THE INPUT FIELD */
+    #charInput {
+        height: 60px; /* Matches the button height */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-family: "zuume-edge", sans-serif;
+        font-weight: bolder;
+        font-style: normal;
+        font-size: 4rem;
+        color:red;
+        width: 50px; /* Set a smaller width */
+    }
+    
+    
+    /* STYLE FOR THE SUBMIT BUTTON */
+    #submitButton {
+        height:60px;
+        font-family: "zuume-edge", sans-serif;
+        font-weight: bolder;
+        font-style: normal;
+        font-size: 4rem;
+        line-height: 1rem;
+        color:rgb(250, 249, 249);
+        background-color: red;
+      border: none;
+      
+    
+    }
+    /* STYLE FOR THE IMAGE */
+#displayedImage {
+    display: none; /* This line is mandatory */
+    position: absolute;
+    top:0;
+    width:90vw;
+    height: 100vh;
+    margin: auto;
+    object-fit: contain;
+}
+
+}

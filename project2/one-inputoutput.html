@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 INPUT 1 OUTPUT TEMPLATE</title>
+    <link rel="stylesheet" href="https://use.typekit.net/nae4eab.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="top">
+        <div class="text">
+            <h1>FIND A COOL RIDE
+                FOR YOURSELF</h1>
+        </div>
+  
+
+    <div class="next">
+        
+    <div class="input">
+    <!-- INPUT FIELD FOR 1 CHARACTER -->
+    <input type="text" id="charInput" maxlength="1">
+    </div>
+
+    <div class="click">
+    <!-- BUTTON TO DISPLAY IMAGE -->
+    <button onclick="displayImage()" id="submitButton">SUBMIT</button>
+    </div>
+</div>
+
+    <!-- IMAGE TO DISPLAY -->
+    <img id="displayedImage" src="https://www.cyclingforsofties.com/cdn-cgi/imagedelivery/o69ZOmJNjbcYjjR9H39xLw/c5166c85-90e6-43f0-ea97-f793672a6600/w=1600,h=620" alt="Displayed Image">
+
+
+    <!-- Image Display Script Below -->
+    <script>
+        // Array of images
+        // DIRECTIONS: UPDATE THE URLS WITH THE RELATIVE LINKS OF YOUR IMAGES
+        const images = [
+            "images/1.png", //A
+            "images/2.png", //B
+            "images/3.png", //C
+            "images/4.png", //D
+            "images/5.png", //E
+            "images/6.png", //F
+            "images/7.png", //G
+            "images/8.png", //H
+            "images/9.png", //I
+            "images/10.png", //J
+            "images/11.png", //K
+            "images/12.png", //L
+            "images/13.png", //M
+            "images/14.png", //N
+            "images/15.png", //O
+            "images/16.png", //P
+            "images/17.png", //Q
+            "images/18.png", //R
+            "images/19.png", //S
+            "images/20.png", //T
+            "images/21.png", //U
+            "images/22.png", //V
+            "images/23.png", //W
+            "images/24.png", //X
+            "images/25.png", //Y
+            "images/26.png", //Z
+            ];
+
+        function displayImage() {
+            const input = document.getElementById("charInput").value.toUpperCase();
+            const imgElement = document.getElementById("displayedImage");
+            
+            // Assign an image based on character (A-Z)
+            const index = input.charCodeAt(0) - 65; // 'A' is 65 in ASCII
+            if (index >= 0 && index < images.length) {
+                imgElement.src = images[index];
+                imgElement.style.display = "block";
+            } else {
+                /* 
+                alert("Please enter a letter between A and Z.");
+                imgElement.style.display = "none";
+                */
+
+                // IF INVALID INPUT IS ENTERED, DISPLAY ALTERNATE IMAGE
+                imgElement.src = "https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcmtkdnJhMXY4Njd1cXR3MTM3MW1nMzZ1NXNhNHlhOHA0MWF2dDUzdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/13dRJkj5wgKq9q/giphy.gif"
+                imgElement.style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+</html>
