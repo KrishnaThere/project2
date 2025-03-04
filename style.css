@@ -11,7 +11,7 @@ body{
     color:red;
     font-size: 5.5rem;
     line-height: 8rem;
-
+    z-index: -20;
 }
 .top {
     display: flex;
@@ -64,9 +64,11 @@ body{
     display: none; /* This line is mandatory */
     position: absolute;
     top:0;
-    width:100vw;
+    width:90vw;
+    margin: auto;
     height: 100vh;
     object-fit: cover;
+    z-index: -10;
 }
 
 @media screen and (max-width: 1024px) {
@@ -256,7 +258,7 @@ body{
         font-weight: bolder;
         font-style: normal;
         font-size: 4rem;
-        line-height: 1rem;
+        line-height: 0rem;
         color:rgb(250, 249, 249);
         background-color: red;
       border: none;
